@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.1 Safari/605.1.15" version="29.2.1">
+  <diagram name="Страница-1" id="6lVBCmC4c-8pKHs-GGmo">
+    <mxGraphModel dx="976" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="646QgFDHJAAuVeegyjdH-6" edge="1" parent="1" source="646QgFDHJAAuVeegyjdH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="646QgFDHJAAuVeegyjdH-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n6QIpKWtqMkorvfqV3f3-2" edge="1" parent="1" source="646QgFDHJAAuVeegyjdH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="n6QIpKWtqMkorvfqV3f3-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n6QIpKWtqMkorvfqV3f3-3" edge="1" parent="1" source="646QgFDHJAAuVeegyjdH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="646QgFDHJAAuVeegyjdH-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n6QIpKWtqMkorvfqV3f3-4" edge="1" parent="1" source="646QgFDHJAAuVeegyjdH-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="646QgFDHJAAuVeegyjdH-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="646QgFDHJAAuVeegyjdH-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="API Gateway" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="646QgFDHJAAuVeegyjdH-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="AuthService" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="646QgFDHJAAuVeegyjdH-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="OrderService" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="646QgFDHJAAuVeegyjdH-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="CardService" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="n6QIpKWtqMkorvfqV3f3-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="UserService" vertex="1">
+          <mxGeometry height="60" width="120" x="600" y="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
