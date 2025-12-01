@@ -1,4 +1,4 @@
-package com.cardservice.entities;
+package com.cardservice.CardService.entities;
 
 import jakarta.persistence.*;
 
@@ -21,7 +21,7 @@ public class CardEntity {
     private String description;
 
     @Column(name = "category")
-    private List<String> category;
+    private String category;
 
     @Column(name = "seller_id")
     private int sellerId;
@@ -41,7 +41,7 @@ public class CardEntity {
     public CardEntity() {
     }
 
-    public CardEntity(int id, String name, String description, List<String> category, int sellerId, int cost, int stock, LocalDateTime createdAt, LocalDateTime updatedAt) {
+    public CardEntity(int id, String name, String description, String category, int sellerId, int cost, int stock, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -77,11 +77,11 @@ public class CardEntity {
         this.description = description;
     }
 
-    public List<String> getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(List<String> category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 

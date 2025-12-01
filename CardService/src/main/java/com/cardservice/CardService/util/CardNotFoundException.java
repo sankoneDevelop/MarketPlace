@@ -1,4 +1,4 @@
-package com.cardservice.util;
+package com.cardservice.CardService.util;
 
 public class CardNotFoundException extends RuntimeException {
 }

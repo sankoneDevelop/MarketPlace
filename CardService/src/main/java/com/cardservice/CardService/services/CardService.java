@@ -1,13 +1,12 @@
-package com.cardservice.services;
+package com.cardservice.CardService.services;
 
-import com.cardservice.dto.CardEntityResponseDTO;
-import com.cardservice.dto.CreateCardRequestDTO;
-import com.cardservice.entities.CardEntity;
-import com.cardservice.repositories.CardRepository;
-import com.cardservice.util.CardNotFoundException;
+import com.cardservice.CardService.dto.CardEntityResponseDTO;
+import com.cardservice.CardService.dto.CreateCardRequestDTO;
+import com.cardservice.CardService.entities.CardEntity;
+import com.cardservice.CardService.repositories.CardRepository;
+import com.cardservice.CardService.util.CardNotFoundException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -40,7 +39,10 @@ public class CardService {
 
     @Transactional
     public CardEntityResponseDTO createCard(CreateCardRequestDTO dto) {
-        return convertToCardEntityResponseDTO(modelMapper.map(dto, CardEntity.class));
+        CardEntity cardEntity = convertToCardEntity(dto);
+        cardRepository.save(cardEntity);
+
+        return convertToCardEntityResponseDTO(cardEntity);
     }
 
     @Transactional
@@ -51,5 +53,19 @@ public class CardService {
     private CardEntityResponseDTO convertToCardEntityResponseDTO(CardEntity cardEntity) {
         return modelMapper.map(cardEntity, CardEntityResponseDTO.class);
     }
+
+    private CardEntity convertToCardEntity(CreateCardRequestDTO dto) {
+        CardEntity entity = new CardEntity();
+        entity.setName(dto.getName());
+        entity.setDescription(dto.getDescription());
+        entity.setCategory(dto.getCategory());
+        entity.setCost(dto.getCost());
+        entity.setStock(dto.getStock());
+        entity.setSellerId(dto.getSellerId());
+        entity.setCreatedAt(LocalDateTime.now());
+        entity.setUpdatedAt(LocalDateTime.now());
+        return entity;
+    }
+
 
 }

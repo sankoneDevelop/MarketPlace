@@ -1,17 +1,26 @@
-package com.cardservice.dto;
+package com.cardservice.CardService.dto;
 
 import java.util.List;
 
-public class CreateCardRequestDTO {
+public class CardEntityResponseDTO {
 
+    private int id;
     private String name;
     private String description;
-    private List<String> category;
+    private String category;
     private int sellerId;
     private int cost;
     private int stock;
 
-    public CreateCardRequestDTO() {
+    public CardEntityResponseDTO() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -30,11 +39,11 @@ public class CreateCardRequestDTO {
         this.description = description;
     }
 
-    public List<String> getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(List<String> category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 
