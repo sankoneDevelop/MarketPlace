@@ -25,4 +25,12 @@ public class CreateOrderDTO {
     public void setItems(List<OrderItemDTO> items) {
         this.items = items;
     }
+
+    @Override
+    public String toString() {
+        return "CreateOrderDTO{" +
+                "userId=" + userId +
+                ", items=" + items +
+                '}';
+    }
 }
